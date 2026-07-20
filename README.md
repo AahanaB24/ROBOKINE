@@ -41,6 +41,85 @@ ROBOKINE is intended for:
 
 ---
 
+# 📄 Research Paper
+
+ROBOKINE was developed as part of a research project focused on creating a free, configurable, and educational platform for serial robot kinematics. The software integrates robot configuration, forward kinematics, inverse kinematics, workspace generation, singularity analysis, trajectory planning, and machine learning-based inverse kinematics into a single graphical interface.
+
+The paper presents the software architecture, implementation details, validation methodology, experimental case studies, machine learning evaluation, usability analysis, and future development directions.
+
+## Abstract
+
+> **ROBOKINE** is a free Python-based graphical software platform for configurable serial robot kinematics, trajectory planning, workspace analysis, singularity evaluation, and machine learning-based inverse kinematics. Users can configure serial manipulators with up to six degrees of freedom using revolute, prismatic, and fixed joints without requiring programming knowledge or proprietary software. The platform integrates forward kinematics, numerical inverse kinematics, workspace generation, Jacobian-based singularity analysis, multiple trajectory planning methods, and a separate machine learning module for inverse kinematics using Random Forest, K-Nearest Neighbors, and Neural Network regressors. Validation was performed through multiple robot configurations and usability studies, demonstrating ROBOKINE's effectiveness as an educational and research-oriented robotics platform.
+
+---
+
+## Paper
+
+**Research Paper (PDF)**
+
+[Download the Paper]()
+
+---
+
+## Highlights
+
+- Universal GUI for configurable serial robots (1–6 DOF)
+- Supports revolute, prismatic, and fixed joints
+- Real-time Forward and Inverse Kinematics
+- Jacobian-based singularity analysis
+- Workspace visualization
+- Multiple trajectory planning algorithms
+- Machine Learning-based Inverse Kinematics
+- Exportable graphs, animations, and workspace data
+- Validated through four robotic case studies
+- System Usability Scale (SUS) score of **84.6/100**, indicating excellent usability
+
+---
+
+## Experimental Validation
+
+ROBOKINE was evaluated using four representative case studies:
+
+| Case Study | Robot Configuration | Validation Focus |
+|------------|---------------------|------------------|
+| Case Study 1 | 4-DOF R-R-R-P | Fifth-order polynomial trajectory planning |
+| Case Study 2 | 5-DOF P-R-R-R-R | Mixed revolute-prismatic trajectory planning |
+| Case Study 3 | 6-DOF R-R-R-R-R-R | Higher-DOF scalability and parabolic blend trajectories |
+| Case Study 4 | Machine Learning IK | Comparison of Random Forest, KNN, and Neural Networks |
+
+---
+
+## Machine Learning Results
+
+The external Machine Learning Inverse Kinematics module was evaluated using three regression models.
+
+| Model | Average Accuracy |
+|--------|-----------------:|
+| Random Forest | 90.92% |
+| K-Nearest Neighbors | 90.19% |
+| Neural Network | **96.43%** |
+
+The Neural Network achieved the highest prediction accuracy and the lowest Cartesian verification error among all tested models.
+
+---
+
+## Figures
+
+The paper includes:
+
+- Overall software architecture
+- GUI walkthrough
+- Workspace visualization
+- Trajectory planning examples
+- Robot validation case studies
+- Machine learning evaluation
+- Error comparisons
+- Usability study results
+
+These figures demonstrate the complete workflow from robot configuration to trajectory execution and machine learning-based inverse kinematics.
+
+---
+
 # Features
 
 | Feature | Description |
@@ -102,7 +181,7 @@ pip install -r requirements.txt
 
 # Quick Start
 
-## Step 1 — Configure the Robot
+## Step 1: Configure the Robot
 
 Choose:
 
@@ -117,7 +196,7 @@ Preset robot configurations are also available for quick setup.
 
 ---
 
-## Step 2 — Forward Kinematics
+## Step 2: Forward Kinematics
 
 Move the joint sliders to:
 
@@ -129,7 +208,7 @@ Move the joint sliders to:
 
 ---
 
-## Step 3 — Inverse Kinematics
+## Step 3: Inverse Kinematics
 
 Enter a desired target position.
 
@@ -145,7 +224,7 @@ Features include:
 
 ---
 
-## Step 4 — Workspace Generation
+## Step 4: Workspace Generation
 
 Generate the reachable workspace using Monte Carlo sampling.
 
@@ -157,7 +236,7 @@ The workspace visualization helps verify:
 
 ---
 
-## Step 5 — Singularity Analysis
+## Step 5: Singularity Analysis
 
 Evaluate robot configurations using:
 
@@ -170,7 +249,7 @@ This allows users to identify singular or near-singular configurations before ex
 
 ---
 
-## Step 6 — Trajectory Planning
+## Step 6: Trajectory Planning
 
 ROBOKINE supports multiple trajectory planning algorithms:
 
@@ -188,7 +267,7 @@ Users can:
 
 ---
 
-## Step 7 — Visualization
+## Step 7: Visualization
 
 Real-time trajectory plots include:
 
@@ -200,7 +279,7 @@ Trajectory graphs can be downloaded for reports or publications.
 
 ---
 
-## Step 8 — Export
+## Step 8: Export
 
 ROBOKINE supports exporting:
 
@@ -479,6 +558,21 @@ See the LICENSE file for details.
 # Contact
 
 For questions, suggestions, or collaboration opportunities, please open a GitHub Issue or contact the project maintainers.
+
+---
+
+## Citation
+
+If you use ROBOKINE in your research, please cite:
+
+```bibtex
+@article{robokine2026,
+  title={ROBOKINE: A Free Python-Based Universal Platform for Serial Robot Kinematics, Trajectory Planning, Workspace Analysis, Singularity Evaluation, and Machine Learning-Based Inverse Kinematics},
+  author={Author 1 and Author 2 and Author 3},
+  journal={Under Review},
+  year={2026}
+}
+```
 
 ---
 
