@@ -95,7 +95,7 @@ pip install -r requirements.txt
 ## Launch ROBOKINE
 
 ```bash
-python main.py
+./ROBOKINE_INDIA_V1
 ```
 
 ---
