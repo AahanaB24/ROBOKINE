@@ -2,10 +2,6 @@
 ### A Free Python-Based Universal Platform for Serial Robot Kinematics, Trajectory Planning, Workspace Analysis, Singularity Evaluation, and Machine Learning-Based Inverse Kinematics
 
 <p align="center">
-  <img src="assets/banner.png" width="900">
-</p>
-
-<p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-success)
