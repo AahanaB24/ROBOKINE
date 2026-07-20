@@ -41,7 +41,7 @@ ROBOKINE is intended for:
 
 ---
 
-# 📄 Research Paper
+# Research Paper
 
 ROBOKINE was developed as part of a research project focused on creating a free, configurable, and educational platform for serial robot kinematics. The software integrates robot configuration, forward kinematics, inverse kinematics, workspace generation, singularity analysis, trajectory planning, and machine learning-based inverse kinematics into a single graphical interface.
 
