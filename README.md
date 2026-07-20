@@ -49,7 +49,25 @@ The paper presents the software architecture, implementation details, validation
 
 ## Abstract
 
-> **ROBOKINE** is a free Python-based graphical software platform for configurable serial robot kinematics, trajectory planning, workspace analysis, singularity evaluation, and machine learning-based inverse kinematics. Users can configure serial manipulators with up to six degrees of freedom using revolute, prismatic, and fixed joints without requiring programming knowledge or proprietary software. The platform integrates forward kinematics, numerical inverse kinematics, workspace generation, Jacobian-based singularity analysis, multiple trajectory planning methods, and a separate machine learning module for inverse kinematics using Random Forest, K-Nearest Neighbors, and Neural Network regressors. Validation was performed through multiple robot configurations and usability studies, demonstrating ROBOKINE's effectiveness as an educational and research-oriented robotics platform.
+> **ROBOKINE** Robot kinematics education and early-stage manipulator design require accessible software platforms
+that can support configurable robot modelling, visual validation, and algorithmic comparison without
+dependence on proprietary tools. This paper presents ROBOKINE, a free Python-based graphical
+platform for serial robot kinematics, trajectory planning, workspace analysis, singularity evaluation,
+and machine-learning-based inverse kinematics. The software allows users to configure serial
+manipulators up to 6-DOF by selecting joint type, motion axis, link length, home position, joint
+constraints, and via points. Its analytical module integrates matrix-based forward kinematics,
+numerical inverse kinematics, random-sampling-based workspace generation, Jacobian-based
+singularity checking, and joint-space trajectory planning using fifth-order polynomial, third-order
+polynomial, and parabolic-blend methods. In addition, a separate machine-learning IK GUI was
+developed using Random Forest, K-Nearest Neighbors, and Neural Network regressors trained from
+forward-kinematics-generated datasets. ROBOKINE was validated using four case studies: a 4-DOF
+R-R-R-P robot, a 5-DOF P-R-R-R-R robot, a 6-DOF R-R-R-R-R-R robot, and an ML-based IK
+evaluation. The results demonstrated successful pose visualization, workspace verification, trajectory
+graph generation, animation export, and IK prediction. The Neural Network achieved the best ML-IK
+performance, with an average binned accuracy of 96.43% and the lowest Cartesian verification error.
+The usability evaluation with 50 robotics users further indicated excellent usability, supporting
+ROBOKINE as an effective platform for robotics education, prototyping, and preliminary kinematic
+validation.
 
 ---
 
